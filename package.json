@@ -4,11 +4,19 @@
   "description": "Node.js template for solving Advent Of Code problems",
   "main": "",
   "scripts": {
-  },
+    "start": "node ./scripts/start.js"},
   "repository": {
     "type": "git",
     "url": "aoc-npm-template"
   },
   "author": "mariofdezzz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "nodemon": "^2.0.6",
+    "shelljs": "^0.8.4"
+  },
+  "_moduleAliases": {
+    "@utils": "public/utils"
+  }
 }
