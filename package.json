@@ -1,0 +1,14 @@
+{
+  "name": "aoc-npm-template",
+  "version": "0.0.0",
+  "description": "Node.js template for solving Advent Of Code problems",
+  "main": "",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "aoc-npm-template"
+  },
+  "author": "mariofdezzz",
+  "license": "MIT"
+}
