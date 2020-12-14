@@ -21,6 +21,10 @@ if (!days.includes(day)) {
 const nodemonExecutablePath =
     os.platform() === "win32" ? "node_modules\\.bin\\nodemon.cmd" : "nodemon"
 
-spawn(nodemonExecutablePath, ["-e", "js,txt", `scripts/launch.js`, `${day}`], {
-    stdio: "inherit",
-})
+spawn(
+    nodemonExecutablePath,
+    ["--quiet", "-e", "js,txt", `scripts/launch.js`, `${day}`],
+    {
+        stdio: "inherit",
+    }
+)
