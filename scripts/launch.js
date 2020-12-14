@@ -8,8 +8,8 @@ const data = parseData(resolve(`./src/2020/${day}`))
 
 // === Results ===
 console.time("Time")
-const result1 = part1(data.test)
-const result2 = part2(data.test)
+const result1 = part1(data)
+const result2 = part2(data)
 console.timeEnd("Time")
 
 console.log("Solution to part 1:", result1)
