@@ -24,6 +24,13 @@ inquirer
                     disabled: "Not availible yet",
                 },
             ],
+            filter: (val) => val.toLowerCase(),
+        },
+        {
+            type: "number",
+            name: "year",
+            message: "Which year are you going to solve?",
+            default: new Date().getFullYear(),
         },
         {
             type: "input",
