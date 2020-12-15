@@ -2,9 +2,9 @@ require('module-alias/register')
 const { resolve } = require("path")
 const { parseData } = require("@utils")
 
-let day = process.argv[2]
-const { part1, part2 } = require(`../src/2020/${day}`)
-const data = parseData(resolve(`./src/2020/${day}`))
+let path = process.argv[2]
+const { part1, part2 } = require(`../${path}`)
+const data = parseData(resolve(`./${path}`))
 
 // === Results ===
 console.time("Time")

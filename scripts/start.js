@@ -1,21 +1,22 @@
 const os = require("os")
 const { spawn } = require("child_process")
-const { existsSync, readdirSync } = require("fs")
+const { existsSync, readdirSync, readFileSync } = require("fs")
 const { cp, mkdir } = require("shelljs")
 
+const config = JSON.parse(readFileSync("public/settings.json").toString())
 const day = process.argv[2]
 
 if (!existsSync("./src")) mkdir("src")
 
 const years = readdirSync("./src")
 
-if (!years.includes("2020")) mkdir("src/2020")
+if (!years.includes(config.year)) mkdir(`src/${config.year}`)
 
-const days = readdirSync("./src/2020")
+const days = readdirSync(`src/${config.year}`)
 
 if (!days.includes(day)) {
     console.log(`Creating file structure for ${day}...`)
-    cp("-r", "public/template", `src/2020/${day}`)
+    cp("-r", `public/template/${config.compiler}`, `src/${config.year}/${day}`)
 }
 
 const nodemonExecutablePath =
@@ -23,7 +24,13 @@ const nodemonExecutablePath =
 
 spawn(
     nodemonExecutablePath,
-    ["--quiet", "-e", "js,txt", `scripts/launch.js`, `${day}`],
+    [
+        "--quiet",
+        "-e",
+        "js,txt",
+        `scripts/launch.js`,
+        `src/${config.year}/${day}`,
+    ],
     {
         stdio: "inherit",
     }
