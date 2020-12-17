@@ -18,8 +18,8 @@ const achieved = () => {
             const { part1, part2 }= require(path)
             const data = parseData("src/" + year +"/"+ day)
     
-            if (part1(data.input)) ++count
-            if (part2(data.input)) ++count
+            if (part1(data)) ++count
+            if (part2(data)) ++count
     
             list[year][number] = count
         })
