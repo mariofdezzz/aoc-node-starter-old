@@ -47,5 +47,5 @@ inquirer
     ])
     .then((ans) => {
         writeFileSync("public/settings.json", JSON.stringify(ans, null, 4))
-        console.log("\x1b[32mSettings saved!")
+        console.log("\x1b[32mSettings saved! \x1b[0m")
     })
