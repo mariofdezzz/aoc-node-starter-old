@@ -10,20 +10,6 @@ const parseData = (path) => {
         input: readFileSync(input).toString(),
     }
     
-    let preprocessed = {
-        test: raw.test.split(/\r?\n\r?\n/),
-        input: raw.input.split(/\r?\n\r?\n/)
-    }
-    if (preprocessed.test.length > 1 || preprocessed.input.length > 1 ) {
-        return {
-            test: preprocessed.test.map( el => {
-                return el.replace(/\r?\n/g, " ").split(/\s/)
-            }),
-            input: preprocessed.input.map( el => {
-                return el.replace(/\r?\n/g, " ").split(/\s/)
-            })
-        }
-    }
     return {
         test: raw.test.split(/\r?\n/),
         input: raw.input.split(/\r?\n/),
