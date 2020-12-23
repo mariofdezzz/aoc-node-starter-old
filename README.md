@@ -11,9 +11,7 @@ This template pretends to unify Node.js community to make a quality tempalte for
 ## 🚀 Start!
 First [template]() this repository. Then, easy as write `npm i` and `npm run start day1` on the command line (or whatever day you want). 
 
-<video width="100%" autoplay loop>
-    <source src="https://user-images.githubusercontent.com/47794126/102993565-4c336b00-4515-11eb-9ad2-132482bc3793.mp4">
-</video>
+![Start example](https://github.com/mariofdezzz/aoc-template-sources/blob/main/2020-12-23%2011-39-20_Trim.gif?raw=true)
 
 ### Notes
 
@@ -34,6 +32,4 @@ If you didn't like your first configuration, type `npm run init` and config will
 
 [comment]: <> (Change THIS description when Typescript is DONE!)
 
-<video width="100%" autoplay loop>
-    <source src="https://user-images.githubusercontent.com/47794126/102992954-2f4a6800-4514-11eb-96b3-e97929cac1a2.mp4">
-</video>
+![Init example](https://github.com/mariofdezzz/aoc-template-sources/blob/main/2020-12-23%2011-49-47_Trim.gif?raw=true)
