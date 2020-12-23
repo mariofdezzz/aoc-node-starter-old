@@ -14,7 +14,7 @@ const start = () => {
 
     const years = readdirSync("./src")
 
-    if (!years.includes(config.year)) mkdir(`src/${config.year}`)
+    if (!years.includes(config.year + "")) mkdir(`src/${config.year}`)
 
     const days = readdirSync(`src/${config.year}`)
 
