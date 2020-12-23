@@ -1,6 +1,6 @@
 # 🎄 AoC npm Template
 
-![npm v0.1.0](https://img.shields.io/badge/npm-v0.1.0-orange)
+![npm v0.1.1](https://img.shields.io/badge/npm-v0.1.1-orange)
 ![CI pending](https://img.shields.io/badge/CI-pending-orange)
 ![OS Win,Mac,Linux](https://img.shields.io/badge/OS-Win|Linux|Mac-red)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
