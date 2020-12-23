@@ -9,7 +9,7 @@
 This template pretends to unify Node.js community to make a quality tempalte for everybody to start easy and quick, adding most features possible for enthusiasts!
 
 ## 🚀 Start!
-First [template](https://github.com/mariofdezzz/aoc-npm-template/generate) this repository. Then, easy as write `npm i` and `npm run start day1` on the command line (or whatever day you want). 
+First [template](https://github.com/mariofdezzz/aoc-npm-template/#) this repository. Then, easy as write `npm i` and `npm run start day1` on the command line (or whatever day you want). 
 
 ![Start example](https://github.com/mariofdezzz/aoc-template-sources/blob/main/2020-12-23%2011-39-20_Trim.gif?raw=true)
 
