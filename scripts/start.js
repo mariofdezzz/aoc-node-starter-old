@@ -29,18 +29,19 @@ const start = () => {
     }
 
     /* --- Execution --- */
-    const nodemonExecutablePath =
+    const npx =
         os.platform() === "win32"
-            ? "node_modules\\.bin\\nodemon.cmd"
-            : "nodemon"
+            ? "npx.cmd"
+            : "npx"
 
     spawn(
-        nodemonExecutablePath,
+        npx,
         [
+            "nodemon",
             "--quiet",
             "-e",
-            "js,txt",
-            `scripts/launch.js`,
+            "js,ts,txt",
+            `scripts/launch.ts`,
             `src/${config.year}/${day}`,
         ],
         {

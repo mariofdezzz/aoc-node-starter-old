@@ -18,13 +18,15 @@ inquirer
             name: "compiler",
             message: "What language do you prefer?",
             choices: [
-                "JavaScript",
+                {
+                    name: "JavaScript",
+                    value: "js",
+                },
                 {
                     name: "TypeScript",
-                    disabled: "Not availible yet",
+                    value: "ts",
                 },
             ],
-            filter: (val) => val.toLowerCase(),
         },
         {
             type: "number",

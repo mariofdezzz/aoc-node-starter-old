@@ -1,5 +1,5 @@
 require('module-alias/register')
-const { resolve } = require("path")
+import { resolve } from "path"
 const { parseData } = require("@utils")
 
 let path = process.argv[2]
