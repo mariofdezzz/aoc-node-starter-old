@@ -1,17 +1,17 @@
-# 🎄 AoC npm Template
+# 🎄 AoC Node.js Template
 
-![npm v0.1.1](https://img.shields.io/badge/npm-v0.1.1-orange)
+![npm v0.2.0](https://img.shields.io/badge/npm-v0.2.0-orange)
 ![CI pending](https://img.shields.io/badge/CI-pending-orange)
 ![OS Win,Mac,Linux](https://img.shields.io/badge/OS-Win|Linux|Mac-red)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
-![TypeScript](https://img.shields.io/badge/-TypeScript_(feature)-blue)
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue)
 
-This template pretends to unify Node.js community to make a quality tempalte for everybody to start easy and quick, adding most features possible for enthusiasts!
+This template pretends to unify Node.js users to make a quality tempalte for everybody to start easy and quick, adding most features possible for enthusiasts!
 
 ## 🚀 Start!
-First [template](https://github.com/mariofdezzz/aoc-npm-template) this repository. Then, easy as write `npm i` and `npm run start day1` on the command line (or whatever day you want). 
+First **template** this repository. Then, easy as write `npm i` and `npm run start day1` on the command line (or whatever day you want). 
 
-![Start example](https://github.com/mariofdezzz/aoc-template-sources/blob/main/2020-12-23%2011-39-20_Trim.gif?raw=true)
+![Start example](https://github.com/mariofdezzz/aoc-template-sources/blob/main/init.gif?raw=true)
 
 ### Notes
 
@@ -32,4 +32,4 @@ If you didn't like your first configuration, type `npm run init` and config will
 
 [comment]: <> (Change THIS description when Typescript is DONE!)
 
-![Init example](https://github.com/mariofdezzz/aoc-template-sources/blob/main/2020-12-23%2011-49-47_Trim.gif?raw=true)
+![Init example](https://github.com/mariofdezzz/aoc-template-sources/blob/main/start.gif?raw=true)
