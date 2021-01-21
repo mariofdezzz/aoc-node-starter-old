@@ -1,11 +1,12 @@
-const { writeFileSync,readFileSync } = require("fs")
 
-const config = JSON.parse(readFileSync("public/settings.json").toString())
+type Config = {
+    name: string, 
+    description: string
+}
 
-const readme = (achieved) => {
-    const maxCol = 9;
-
-    let years = ""
+const getBody = (achieved: {}, maxCol: number) => {
+    let body = ""
+    
     for (const year in achieved) {
         let table = ""
         let completed = 0
@@ -24,14 +25,20 @@ const readme = (achieved) => {
             if (day == maxCol) table += "|---".repeat(maxCol) + "|\n"
         }
 
-        years += `## ${year} \n\n🌟 ${completed}/50 \n\n${table}| \n`
+        body += `## ${year} \n\n🌟 ${completed}/50 \n\n${table}| \n`
     }
-
-    let text = `# ${config.name}\n` +
-        `${config.description}\n\n` +
-        `${years}`
-    
-    writeFileSync("README.md", text)
+    return body
 }
 
-module.exports = readme
+const readme = (config: Config, achieved: {}) => {
+    const maxCol = 9;
+
+    const header =  `# ${config.name}\n` +
+                    `${config.description}\n\n`
+    
+    const body = getBody(achieved, maxCol) 
+    
+    return header + body
+}
+
+export default readme

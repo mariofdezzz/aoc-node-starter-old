@@ -1,6 +1,6 @@
-const { readdirSync } = require("fs")
-const parseData = require("./parseData")
-const src = "../../src/"
+import { readdirSync } from 'fs'
+import read from './read'
+const src: string = "../../src/"
 
 const achieved = () => {
     const list = {};
@@ -8,7 +8,7 @@ const achieved = () => {
     
     years.forEach( year => {
         list[year] = {}
-        days = readdirSync("src/"+ year)
+        let days = readdirSync("src/"+ year)
     
         days.forEach( day => {
             let number = day.match(/\d+/)
@@ -16,7 +16,7 @@ const achieved = () => {
             let count = 0
 
             const { part1, part2 }= require(path)
-            const data = parseData("src/" + year +"/"+ day)
+            const data = read("src/" + year +"/"+ day)
     
             if (part1(data)) ++count
             if (part2(data)) ++count
@@ -27,4 +27,4 @@ const achieved = () => {
     return list
 }
 
-module.exports = achieved
+export default achieved

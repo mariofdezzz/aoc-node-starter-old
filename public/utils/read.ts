@@ -1,7 +1,7 @@
-const { readFileSync } = require("fs")
-const { sep } = require("path")
+import { readFileSync } from 'fs'
+import { sep } from 'path'
 
-const parseData = (path) => {
+const read = (path: string) => {
     let input = path + sep + "input.txt"
     let test = path + sep + "test.txt"
 
@@ -16,4 +16,4 @@ const parseData = (path) => {
     }
 }
 
-module.exports = parseData
+export default read

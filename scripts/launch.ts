@@ -1,10 +1,9 @@
-require('module-alias/register')
 import { resolve } from "path"
-const { parseData } = require("@utils")
+import { read } from '../public/utils'
 
 let path = process.argv[2]
 const { part1, part2 } = require(`../${path}`)
-const data = parseData(resolve(`./${path}`))
+const data = read(resolve(`./${path}`))
 
 // === Results ===
 console.time("Time")

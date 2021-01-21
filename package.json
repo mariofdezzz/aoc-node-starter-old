@@ -1,11 +1,11 @@
 {
   "name": "aoc-npm-template",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Node.js template for solving Advent Of Code problems",
   "main": "",
   "scripts": {
     "start": "node ./scripts/start.js",
-    "build": "node ./scripts/build.js",
+    "build": "npx ts-node ./scripts/build.ts",
     "init": "node ./scripts/init.js"
   },
   "repository": {
